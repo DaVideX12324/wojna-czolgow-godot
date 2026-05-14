@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes in [] on its own line
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Wojna Czołgów"
+config/description="Port klasycznej polskiej gry mobilnej do Godot 4"
+run/main_scene="res://scenes/Battle.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=480
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
