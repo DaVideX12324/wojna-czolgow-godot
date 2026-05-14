@@ -126,7 +126,7 @@ func _draw() -> void:
 		if grid[col] == null:
 			continue
 		for row in ROWS:
-			var v := grid[col][row]
+			var v :int= grid[col][row]
 			if v == 1:
 				draw_rect(Rect2(col, row, 1, 1), ground_color)
 			elif v == 4:

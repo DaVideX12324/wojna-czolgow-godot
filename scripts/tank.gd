@@ -37,7 +37,7 @@ func update_visuals() -> void:
 
 func take_damage(dmg: int) -> void:
 	if shield > 0:
-		var blocked := min(shield, dmg)
+		var blocked :float= min(shield, dmg)
 		shield -= blocked
 		dmg -= blocked
 	hp -= dmg

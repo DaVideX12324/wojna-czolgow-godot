@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 	match state:
 		GameState.FALL_1, GameState.FALL_2, GameState.FALL_3, \
 		GameState.FALL_4, GameState.FALL_5, GameState.FALL_6:
-			var still_falling := terrain.apply_gravity(int(50.0 * delta) + 1)
+			var still_falling :float= terrain.apply_gravity(int(50.0 * delta) + 1)
 			if not still_falling:
 				_on_terrain_settled()
 		GameState.CHECK_WIN:
