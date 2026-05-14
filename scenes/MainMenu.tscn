@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://main_menu"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1"]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.1, 0.12, 0.08, 1)
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_left = 0.3
+anchor_right = 0.7
+anchor_top = 0.2
+anchor_bottom = 0.9
+grow_horizontal = 3
+grow_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="VBox"]
+text = "WOJNA CZOŁGÓW"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 32
+
+[node name="BtnBattle" type="Button" parent="VBox"]
+text = "Nowa bitwa"
+
+[node name="BtnShop" type="Button" parent="VBox"]
+text = "Sklep"
+
+[node name="BtnRanks" type="Button" parent="VBox"]
+text = "Rangi i osiągnięcia"
+
+[node name="BtnSettings" type="Button" parent="VBox"]
+text = "Ustawienia"
+
+[node name="BtnQuit" type="Button" parent="VBox"]
+text = "Wyjście"

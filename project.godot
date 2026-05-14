@@ -16,9 +16,15 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Wojna Czołgów"
 config/description="Port klasycznej polskiej gry mobilnej do Godot 4"
-run/main_scene="res://scenes/Battle.tscn"
+run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+WeaponData="*res://scripts/weapon_data.gd"
+RankSystem="*res://scripts/rank_system.gd"
+AI="*res://scripts/ai.gd"
 
 [display]
 
